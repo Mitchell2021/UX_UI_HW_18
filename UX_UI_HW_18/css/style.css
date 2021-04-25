@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+}
+header {
+    background-color: #12232E;
+    padding: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+header ul {
+    float: right;
+    color: white;
+}
+header li {
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    display: inline-block;
+    padding: 0px 5px;
+}
+header p {
+    display: inline-block;
+}
+.heroImg {
+    border-radius: 73px;
+    padding: 100px 15px;
+}
+h1 {
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+}
+h3 {
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+}
+h4 {
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 56px;
+}
+p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+}
+button {
+    padding: 15px;
+    background-color:#12232E;
+    color: white;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}
+footer {
+    background-color: #4DA8DA;
+    padding: 5px;
+    color: black;
+}
+footer ul {
+    list-style: none;
+    padding-left: 5px;
+}
+footer li {
+    display: inline-block;
+    padding: 0px 7px;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration-line: underline;
+}
+
+/* UX Skills */
+.flexContainer {
+    display: flex;
+    padding: 60px 30px;
+}
+.flexContainer div {
+    width: 33%;
+    padding: 25px;
+}
+
+/* My Work */
+.myWork {
+    padding: 60px 30px;
+    padding-top: 0;
+    background-color: white;
+}
+.workGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 350px 350px 350px;
+  grid-template-areas:
+  "img1 content1"
+  "img2 content2"
+  "img3 content3"
+  ;
+}
+.workGrid img {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+.img1 {
+    grid-area: img1;
+}
+.img2 {
+    grid-area: img2;
+}
+.img3 {
+    grid-area: img3;
+}
+.img1, .img2, .img3, .content1, .content2, .content3 {
+    padding: 80;
+}
+.content1 {
+    grid-area: content1;
+}
+.content2 {
+    grid-area: content2;
+}
+.content3 {
+    grid-area: content3;
+}
+
+@media only screen and (max-width: 600){
+    .workGrid {
+        grid-template-columns: 50%;
+        grid-template-rows: 350px 350px 350px 350px;
+        grid-template-areas: 
+        "content1"
+        "content2"
+        "content3"
+        ;
+    }
+}
